@@ -83,6 +83,7 @@ HRESULT WINAPI EndSceneHook(void *pDevicePtr)
         {
             fprintf(stderr, "Could not draw text.\n");
         }
+        (void)pFont->Release();
     }
 
     return EndSceneTrampoline(pDevicePtr);
